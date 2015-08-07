@@ -1,0 +1,62 @@
+package com.dateme.configuration;
+
+public class AppConstants {
+
+    /*************************************************************************************************
+     * Below variables need to get changed at the time of Creation of Build
+     * 
+     * ***********************************************************************************************/
+
+    public static final String HOST = "http://qa302-res.panamaxil.com";
+    public static final String HSM_HOST = "http://qa302-hsm.panamaxil.com";
+    public static final String PRODUCT_HOST = "http://qa302-tws.panamaxil.com";
+    public static final String MDM_HOST = "http://qa302-mdm.panamaxil.com";
+
+    public static final String DATABASENAME = "QA_agent_Ver3.0.2.db";
+    public static final int DATABASE_VERSION = 1;
+    public static final String ACCESSTYPE = "0";
+    public static final String TERMINALTYPE = "001";
+
+    public static final String CURRENCY = "INR";
+
+    public static final String BUSINESSCLIENTTRANSACTIONKEY = "1285938585";
+
+    public static final String APP_TRACKING_PATTERN = "IND/2014/OCT/01/+5:30/Agent/Android/login/1";
+
+    public static final String APPPREFERENCENAME = "QA-Agent";
+
+    public static final String APPCODE = "QA-ANDROID-AGENT";
+    public static final String REDSTAR = "<font color=#ff0000>*</font>";
+    public static final int LOAD_MORE_RECORD_COUNT = 10;
+
+    public static final String GROUPID = "1";
+    public static final String ASSIGNEDDEVICES = "[\"1\"]";
+
+    /*************************************************************************************************/
+    public static final String TERMINALNUMBERHOSTURL = HOST
+            + "/commonrest/commonrest";
+    public static final String PRODUCTURL = PRODUCT_HOST
+            + "/productrest/productrest";
+    public static final String AGENTHOSTURL = HOST
+            + "/distributormobilerest/distributormobilerest";
+    public static final String HSM_HOSTURL = HSM_HOST + "/hsmrest/hsmrest";
+    public static final String APPUPDATEURL = MDM_HOST + "/api/commonapi/";
+    /* Application Constants Used in Application */
+
+    public static final String APPLICATION_VERSION_TRACKER = "Application_Version_Tracker";
+    public static final String CLIENT = "Client";
+
+    public static final String EXCEPTION = "EXCEPTION";
+    public static final String ENABLED = "Enabled";
+    public static final String TRANSACTIONPIN = "Transaction PIN";
+    public static final String UPDATEAPP = "UPDATE_APP";
+    public static final String DEBUG = "DEBUG";
+
+    public static final int HSMFLAG = 1;
+    public static final int TERMINALKEYFLAG = 0;
+    public static final int COMMANFLAG = 2;
+    public static final int TESTFLAG = 3;
+
+    private AppConstants() {
+    }
+}

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, QA-AgentActivity!</string>
+    <string name="app_name">Online Dating</string>
+     <string name="app_id">305461266330816</string>
+
+ <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string-array name="operatorNames">
+        <item>Zain Tanzania</item>
+        <item>MIC Tanzania Limited (tiGO)</item>
+        <item>Tanzania Telecommunications Company Limited</item>
+        <item>Vodacom Tanzania</item>
+        <item>Benson Informatics Limited</item>
+        <item>Zantel</item>
+    </string-array>
+
+    <style name="red_text_font">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#F87217</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Validation String -->
+    <string name="msg_no_internet_conn">No Internet Connection Available.</string>
+    <string name="msg_enter_ref_no">Enter Reference Number</string>
+    <string name="msg_enter_txReference">Enter TxReference</string>
+    <string name="msg_enter_amt">Enter Amount</string>
+    <string name="msg_enter_token">Please Enter Token</string>
+    <string name="msg_enter_cust_email">Enter Customer Email</string>
+    <string name="msg_invalid">Invalid</string>
+    <string name="msg_invalid_cust_email">Invalid Customer Email</string>
+    <string name="msg_enter_amt_btwn">Enter Amount between </string>
+    <string name="msg_enter_amt_lessthen">Enter Amount less than </string>
+    <string name="msg_enter_notify_no">Enter Notify Number</string>
+    <string name="msg_ref_custMob_not_same">Reference Number and Customer Mobile Should not be same</string>
+    <string name="msg_enter_valid_pin">Enter Valid PIN</string>
+    <string name="msg_confirm_topup_part1">"Do you want to recharge of "</string>
+    <string name="msg_confirm_topup_part2"> on Mobile</string>
+    <string name="msg_exit_app_logout_header">Exit Application</string>
+    <string name="msg_logout">Are you sure you want to Logout?</string>
+    <string name="msg_bluetooth_not_connect">Unable to Connect</string>
+    <string name="msg_bluetooth_not_supported">Bluetooth is not supported</string>
+    <string name="msg_bluetooth_securityException">SecurityException</string>
+    <string name="msg_bluetooth_noMethodException">NoSuchMethodException</string>
+    <string name="msg_bluetooth_illegalArgException">IllegalArgumentException</string>
+    <string name="msg_bluetooth_illegalAccessException">IllegalAccessException</string>
+    <string name="msg_bluetooth_invocationTargetException">InvocationTargetException</string>
+    <string name="msg_confirm_billpay">"Do you want to recharge of "</string>
+    <string name="msg_confirm_remittIn">"Do you want to Remit IN of "</string>
+    <string name="msg_confirm_generateOTP">"Do you want to Generate OTP "</string>
+    <string name="msg_enter_otp">Enter One Time Password</string>
+    <string name="msg_enter_pin_quantity">Enter PIN Quantity</string>
+    <string name="msg_enter_pin_quantity_btwn">Enter Pin Qunatity between </string>
+    <string name="msg_confirm_vouchersell_part1">Do you want to get </string>
+    <string name="msg_confirm_vouchersell_part2">Pins of </string>
+    <string name="msg_select_proper_date">Please Select Proper Date</string>
+    <string name="msg_no_record_found">No Record Found</string>
+    <string name="msg_plz_enter_ref_no">Please Enter Reference Number</string>
+    <string name="msg_plz_enter_txReference">Please Enter TxReference</string>
+    <string name="msg_enter_current_pin">Enter Current PIN</string>
+    <string name="msg_invalid_pin">Invalid Pin</string>
+    <string name="msg_invalid_password">Invalid Password</string>
+    <string name="msg_enter_pin">Enter Pin</string>
+    <string name="msg_enter_new_pin">Enter New PIN</string>
+    <string name="msg_enter_con_new_pin">Enter Confirm New PIN</string>
+    <string name="msg_pin_not_match">Pin not matching</string>
+    <string name="msg_enter_password">Enter Password</string>
+    <string name="msg_new_enter_password">Enter New Password</string>
+    <string name="msg_con_new_enter_password">Enter Confirm New Password</string>
+    <string name="msg_password_not_match">Password not matching</string>
+    <string name="msg_register_acc_first">Please Register your Account First</string>
+    <string name="msg_plz_enter_password">Please Enter Password</string>
+    <string name="msg_invalid_login">Invalid Login</string>
+    <string name="msg_enter_kyc_info">Please Enter KYC Info</string>
+    <string name="msg_enter_email_add">Enter valid email Address</string>
+    <string name="msg_phone_no_minimum_8_digit">Phone Number Must be minimum of 8 Digit.</string>
+    <string name="msg_enter_either_email_or_phone">Enter phone number or email id, atleast one is mandatory</string>
+    <string name="msg_enter_terminal_no">Enter TerminalNumber</string>
+    <string name="msg_enter_transaction_pin">Enter Transaction PIN</string>
+    <string name="msg_enter_terminal_id">Please Enter Terminal Id</string>
+    <string name="msg_plz_enter_transaction_pin">Please Enter Transaction PIN</string>
+    <string name="msg_internet_not_connected_title">Not Connected</string>
+    <string name="msg_internet_not_connected_message">Internet is not connected</string>
+    <string name="msg_invalid_pass_logout">Invalid password, Logged Out</string>
+    <string name="msg_loggedout">Logged Out</string>
+    <string name="msg_error_not_connect_to_server">Error connecting to server, closing app!</string>
+    <string name="msg_confirm_tranDetail">"Do you Want to get Transaction Detail ?"</string>
+    <string name="msg_enter_cust_mob">Enter Customer Mobile</string>
+    <string name="msg_enter_conf_trans_pin">Please Enter Confirm Transaction PIN</string>
+    <string name="msg_enter_trans_pin_same">Transaction PIN &amp; Confirm Transaction PIN must be same</string>
+    <string name="msg_enter_conf_new_pass">Please Enter Confirm Password</string>
+    <string name="msg_enter_pass_same">Password &amp; Confirm Password must be same</string>
+    <string name="msg_progress_dialog_title_downloading">Downloading..</string>
+    <string name="msg_progress_dialog_title_connecting">Connecting..</string>
+    <string name="msg_progress_dialog_message_prefix_downloading">Downloading file</string>
+    <string name="msg_progress_dialog_message_prefix_connecting">Connecting to</string>
+    <string name="msg_user_message_download_complete">Download complete!</string>
+    <string name="msg_user_message_download_canceled">Download canceled!</string>
+    <string name="msg_error_message_bad_url">Error: Invalid URL!</string>
+    <string name="msg_error_message_file_not_found">Error: File not found!</string>
+    <string name="msg_error_message_general">Error downloading file!</string>
+    <string name="msg_file_downloaded">File has been successfully downloaded</string>
+    <string name="msg_refund_req_init_successfully">Refund Request Initiated Successfully</string>
+    <string name="msg_refund_rejected_status">Transaction is Rejected,Detail view not available</string>
+    <string name="msg_plz_enter_comment">Please Enter Comment</string>
+    <string name="msg_sel">Select\u0020</string>
+    <string name="msg_select">"Select "</string>
+
+    <!-- Labels -->
+    <string name="lbl_user">User Name:</string>
+    <string name="lbl_pswd">Password:</string>
+    <string name="lbl_welcome_login">Welcome!</string>
+    <string name="lbl_select_topup_product">Select Topup Product</string>
+    <string name="lbl_select_billpay_product">Select BillPay Product</string>
+    <string name="lbl_select_voucher_product">Select Voucher Product</string>
+    <string name="lbl_select_wallet_product">Select Wallet Product</string>
+    <string name="lbl_topup">TopUp</string>
+    <string name="lbl_Remittance">Remittance</string>
+    <string name="lbl_Remittance_cashIN">Remittance CashIn</string>
+    <string name="lbl_Remittance_cashOut">Remittance CashOut</string>
+    <string name="lbl_confirm_Remittance_cashOut">Confirm Remittance Cash out</string>
+    <string name="lbl_enter_OTP">One Time Password (OTP)</string>
+    <string name="lbl_billpay">BillPay</string>
+    <string name="lbl_voucherSell">Voucher Sell</string>
+    <string name="lbl_wallet">Wallet</string>
+    <string name="lbl_myAcc">My Account</string>
+    <string name="lbl_report">Reports</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_favourite">Favourite</string>
+    <string name="lbl_balance">Balance</string>
+    <string name="lbl_ref_no">Reference Number</string>
+    <string name="lbl_trans_time">Transaction Time</string>
+    <string name="lbl_requnique_id">RequestUniqueID</string>
+    <string name="lbl_enter_amt">Enter Amount</string>
+    <string name="lbl_enter_token">Enter Token</string>
+    <string name="lbl_inexchangerate">In Exchange Rate</string>
+    <string name="lbl_outexchangerate">Out Exchange Rate</string>
+    <string name="lbl_denomination">Denomination</string>
+    <string name="lbl_notify_mob_no">Notify Mobile Number</string>
+    <string name="lbl_enter_custMob">Enter Customer Mobile</string>
+    <string name="lbl_enter_custEmail">Enter Customer Email</string>
+    <string name="lbl_enter_transaction_pin">Enter Transaction PIN</string>
+    <string name="lbl_enter_pass">Enter Password</string>
+    <string name="lbl_session_warning">Session has expired,please enter password to continue</string>
+    <string name="lbl_topup_success_msg_part1">You have successfully sent balance on </string>
+    <string name="lbl_topup_success_msg_part2"> with</string>
+    <string name="lbl_topup_success_msg_part3">Thank you for using our services.</string>
+    <string name="lbl_wallet_success_msg">Transaction has been done successfully </string>
+    <string name="lbl_topup_amt">Topup Amount</string>
+    <string name="lbl_surcharge">Surcharge</string>
+    <string name="lbl_convenience_fee">Convenience Fee</string>
+    <string name="lbl_net_amt">Net Amount</string>
+    <string name="lbl_fix_amt">Fix Amount</string>
+    <string name="lbl_my_profile">My Profile</string>
+    <string name="lbl_acc_name">Account Name</string>
+    <string name="lbl_shop_name">Shop Name</string>
+    <string name="lbl_category">Category</string>
+    <string name="lbl_country">Country</string>
+    <string name="lbl_state">State</string>
+    <string name="lbl_zipcode">Zipcode</string>
+    <string name="lbl_id_proofType">ID Proof Type</string>
+    <string name="lbl_idNo">ID No</string>
+    <string name="lbl_firstName">First Name</string>
+    <string name="lbl_lastName">Last Name</string>
+    <string name="lbl_emailAdd">Email Address</string>
+    <string name="lbl_phone">Phone</string>
+    <string name="lbl_sales_exe">Sales Executive</string>
+    <string name="lbl_tree_mgr">Tree Manager</string>
+    <string name="lbl_tree_level">Tree Level</string>
+    <string name="lbl_tree_node_level">Tree Node Level</string>
+    <string name="lbl_tree_node_name">Tree Node Name</string>
+    <string name="lbl_service">Service</string>
+    <string name="lbl_txReference">TxReference</string>
+    <string name="lbl_notify_number">Notify Number</string>
+    <string name="lbl_print">Print</string>
+    <string name="lbl_imei">IMEI</string>
+    <string name="lbl_phone1">Phone1</string>
+    <string name="lbl_alt_phone">Alt Phone</string>
+    <string name="lbl_alt_phone2">Alt Phone2</string>
+    <string name="lbl_name">Name</string>
+    <string name="lbl_id_proof">ID Proof</string>
+    <string name="lbl_id_no">ID Number</string>
+    <string name="lbl_add1">Address1</string>
+    <string name="lbl_add2">Address2</string>
+    <string name="lbl_city">City</string>
+    <string name="lbl_state_name">State Name</string>
+    <string name="lbL_billing">Billing </string>
+    <string name="lbL_template">Template</string>
+    <string name="lbl_sales">Sales</string>
+    <string name="lbl_executive">Executive</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_no_products">No Products</string>
+    <string name="lbl_invalid_input_in">Invalid input in </string>
+    <string name="lbl_minimum">Minimum</string>
+    <string name="lbl_chars_in">Characters in </string>
+    <string name="lbl_btwn"> between </string>
+    <string name="lbl_higher_than"> higher than </string>
+    <string name="lbl_smaller_than"> smaller than </string>
+    <string name="lbl_please_enter_part1">Please Enter </string>
+    <string name="lbl_please_enter_part2">Please enter value of </string>
+    <string name="lbl_please_select_atleast_one">Please select atleast one </string>
+    <string name="lbl_please_wait">Please Wait&#8230;</string>
+    <string name="lbl_percentage">Percentage</string>
+    <string name="lbl_enter_quantity">Enter Quantity</string>
+    <string name="lbl_max">Max </string>
+    <string name="lbl_voucher_trans">Voucher Transactions</string>
+    <string name="lbl_voucher_details">Voucher Detail </string>
+    <string name="lbl_transaction_done_successfully">Transaction has been done successfully !!!</string>
+    <string name="lbl_date">Date</string>
+    <string name="lbl_time">Time</string>
+    <string name="lbl_voucher_trans_receipt">Voucher Transaction Receipt</string>
+    <string name="lbl_reseller_name">Reseller</string>
+    <string name="lbl_reseller_ph_no">Reseller Ph No</string>
+    <string name="lbl_products">Product</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_amt">Amount</string>
+    <string name="lbl_in_amt">In Amount</string>
+    <string name="lbl_trans_info">Transaction Info</string>
+    <string name="lbl_remittance_cashin_data">Remittance Cash In Data</string>
+    <string name="lbl_confirmation_code">Confirmation Code</string>
+    <string name="lbl_info">Information</string>
+    <string name="lbl_operator_req_ID">Operator Request ID</string>
+    <string name="lbl_audit_no">Audit No</string>
+    <string name="lbl_quantity">Qunatity</string>
+    <string name="lbl_pin">Pins</string>
+    <string name="lbl_total_amt">Total Amount</string>
+    <string name="lbl_custMob">Customer Mobile</string>
+    <string name="lbl_custEmail">Customer Email</string>
+    <string name="lbl_resCode">Response Code</string>
+    <string name="lbl_resDesc">Response Description </string>
+    <string name="lbl_product_info">Information</string>
+    <string name="lbl_trans_history">Transaction History</string>
+    <string name="lbl_commission">Commission</string>
+    <string name="lbl_topup_transaction">Topup Transaction</string>
+    <string name="lbl_billpay_transaction">Billpay Transaction</string>
+    <string name="lbl_remitIn_transaction">RemittIn Transaction</string>
+    <string name="lbl_remitOut_transaction">RemittOut Transaction</string>
+    <string name="lbl_voucher_transaction">Voucher Transaction</string>
+    <string name="lbl_wallet_transaction">Wallet Transaction</string>
+    <string name="lbl_inquiry_report">Inquiry Report</string>
+    <string name="lbl_product_transaction">Product Transaction</string>
+    <string name="lbl_last_transaction">Last Transactions</string>
+    <string name="lbl_transaction_query">Transaction Query</string>
+    <string name="lbl_last_day">Last Day</string>
+    <string name="lbl_last_week">Last Week</string>
+    <string name="lbl_custom_search">Custom Search</string>
+    <string name="lbl_select_date">Select Date</string>
+    <string name="lbl_select_from_date">Select From Date</string>
+    <string name="lbl_select_to_date">Select To Date</string>
+    <string name="lbl_last">Last</string>
+    <string name="lbl_last_1_day">Last 1 day</string>
+    <string name="lbl_last_7_days">Last 7 days</string>
+    <string name="lbl_successful">Successful</string>
+    <string name="lbl_error">Error</string>
+    <string name="lbl_to">TO</string>
+    <string name="lbl_of">Of</string>
+    <string name="lbl_at">At</string>
+    <string name="lbl_product_name">Product Name</string>
+    <string name="lbl_req_time">Request Time</string>
+    <string name="lbl_topup_value">Topup Value</string>
+    <string name="lbl_face_amt">Face Amount</string>
+    <string name="lbl_tax">Tax</string>
+    <string name="lbl_comm">Commission</string>
+    <string name="lbl_trans_status">Transaction Status</string>
+    <string name="lbl_transaction_summary">Transaction Summary</string>
+    <string name="lbl_transaction_desc">Transaction Description</string>
+    <string name="lbl_transaction_details">Transaction Details</string>
+    <string name="lbl_load_more">Load More</string>
+    <string name="lbl_transaction_list">Transactions List</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_currency">Currency</string>
+    <string name="lbl_current_billing_report">Current Billing Report</string>
+    <string name="lbl_total_req">Total Request</string>
+    <string name="lbl_success">Success</string>
+    <string name="lbl_fail">Fail</string>
+    <string name="lbl_total_commission">Total Commission</string>
+    <string name="lbl_change_login_password">Change Login Password</string>
+    <string name="lbl_change_trasaction_pin">Change Transaction PIN</string>
+    <string name="lbl_update_products">Update Products</string>
+    <string name="lbl_update_app">Update App</string>
+    <string name="lbl_product_updated_successfully">Product Updated Successfully</string>
+    <string name="lbl_updating_products">Updating Products</string>
+    <string name="lbl_change_login_pin">Change Login PIN</string>
+    <string name="lbl_enter_current_pin">Enter Current PIN</string>
+    <string name="lbl_enter_new_pin">Enter New PIN</string>
+    <string name="lbl_confirm_new_pin">Confirm New PIN</string>
+    <string name="lbl_trasaction_pin_changed_successfully">Transaction Pin changed Successfully</string>
+    <string name="lbl_enter_current_password">Enter Current Password</string>
+    <string name="lbl_password_changed_successfully">Password changed Successfully</string>
+    <string name="lbl_enter_new_password">Enter New Password</string>
+    <string name="lbl_confirm_new_password">Confirm New Password</string>
+    <string name="lbl_topup_favourite">Topup Favourite</string>
+    <string name="lbl_billpay_favourite">Billpay Favourite</string>
+    <string name="lbl_IR_favourite">Remittance Favourite</string>
+    <string name="lbl_voucher_favourite">Voucher Favourite</string>
+    <string name="lbl_wallet_favourite">Wallet Favourite</string>
+    <string name="lbl_no_favourite">No Favourites</string>
+    <string name="lbl_current_balance_is">Your Current Balance is </string>
+    <string name="lbl_agent">Agent</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_register_acc_forgot_password">Register Account / Forgot Password?</string>
+    <string name="lbl_version">Version</string>
+    <string name="lbl_topup_product_not_available">Topup Product Not Available</string>
+    <string name="lbl_billpay_product_not_available">Billpay Product Not Available</string>
+    <string name="lbl_voucher_product_not_available">Voucher Product Not Available</string>
+    <string name="lbl_register_acc">Register Account</string>
+    <string name="lbl_enter_kyc_info">Enter KYC Info</string>
+    <string name="lbl_enter_phone_no">Enter Phone Number</string>
+    <string name="lbl_enter_email">Enter Email</string>
+    <string name="lbl_register_process">Register process</string>
+    <string name="lbl_terminal_key_sent_message">Email has been sent on your email address and message has been sent on your mobile number, please check and feed below details</string>
+    <string name="lbl_credential_added_successfully">Credential added successfully</string>
+    <string name="lbl_login_successful">Login successful</string>
+    <string name="lbl_please_confirm">Please confirm</string>
+    <string name="lbl_select">Select </string>
+    <string name="lbl_set_date">Set Date</string>
+    <string name="lbl_set_time">Set Time</string>
+    <string name="lbl_not_available">Not Available</string>
+    <string name="lbl_coming_soon">Coming Soon</string>
+    <string name="lbl_business_summary">Business Summary</string>
+    <string name="lbl_requeset">Request</string>
+    <string name="lbl_value">Value</string>
+    <string name="lbl_reference">Reference</string>
+    <string name="lbl_number">Number</string>
+    <string name="lbl_transaction">Transaction</string>
+    <string name="lbl_summary">Summary</string>
+    <string name="lbl_start_date">Start Date</string>
+    <string name="lbl_to_date">To Date</string>
+    <string name="lbl_change_credentials">Change Credentials</string>
+    <string name="lbl_img_fromfile">Choose from Gallery</string>
+    <string name="lbl_img_capture">Select from Camera</string>
+    <string name="lbl_img_remove">Remove Photo</string>
+    <string name="lbl_requestid">Request ID</string>
+    <string name="lbl_servicereport">Service</string>
+    <string name="lbl_CustMobile">Cust Mobile</string>
+    <string name="lbl_CustEmail">Cust Email</string>
+    <string name="lbl_shopName">Shop Name</string>
+    <string name="lbl_product">Product</string>
+    <string name="lbl_trnasaction_refund">Refund</string>
+    <string name="lbl_enter_comment">Enter your Comment</string>
+    <string name="lbl_refundID">RefundID</string>
+    <string name="lbl_refundStatus">Refund Status</string>
+    <string name="lbl_refund_transaction">Refund Transaction</string>
+    <string name="lbl_req_start_time">Request Start Time</string>
+    <string name="lbl_req_end_time">Request End Time</string>
+    <string name="lbl_pin_quantity">PIN Quanatity</string>
+    <string name="lbl_reselle_store_info">Reseller/Store Information</string>
+    <string name="lbl_payment_confirmation">PAYMENT CONFIRMATION</string>
+    <string name="lbl_terminal_id">Terminal Id</string>
+    <string name="lbl_carrier">Carrier</string>
+    <string name="lbl_not_registered">Not Registred</string>
+    <string name="lbl_build">Build</string>
+    <string name="lbl_out_amt">Out Amount</string>
+    <string name="lbl_cashout_amt">CashOut Amount</string>
+    <string name="lbl_ConvenientFee">Convenience Fee</string>
+    <string name="lbl_ExchangeAmt">Exchange Amount</string>
+    <string name="lbl_enter_conf_pass">Enter Confirm Password</string>
+    <string name="lbl_enter_conf_trans_pin">Enter Confirm Transaction PIN</string>
+    <string name="lbl_note">**Either Email Address or Phone is Required</string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_title_date_time">Select date &amp; time</string>
+    <string name="lbl_select_device">Select device</string>
+    <string name="lbl_bth_scan">Scanning for devices…</string>
+    <string name="lbl_bth_no_device">No device found!</string>
+    <string name="lbl_pair">Pair</string>
+
+    <!-- Button String -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_Cancel">Cancel</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_yes">YES</string>
+    <string name="btn_no">NO</string>
+    <string name="btn_print">Print</string>
+    <string name="btn_go">GO</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_refund">Refund</string>
+    <string name="btn_req_initiated">Request Initiated</string>
+    <string name="btn_req_already_initiated">Request Already Initiated</string>
+    <string name="btn_req_refund_success">Refund Successful</string>
+    <string name="btn_reject_refund">Refund Failed</string>
+    <string name="btn_in_process">In Process</string>
+    <string name="btn_request_initiated">Request Initiated</string>
+    <string name="btn_install">Install</string>
+    <string name="btn_open">Open</string>
+    <string name="btn_generate_otp">Generate OTP</string>
+    <string name="lbl_title_date">Select date</string>
+
+    <!-- Database Tabels String -->
+    <string name="tbl_userinfo">userinfo</string>
+    <string name="tbl_TopUpProducts">TopUpProducts</string>
+    <string name="tbl_BillPayProducts">BillPayProducts</string>
+    <string name="tbl_VoucherProducts">VoucherProducts</string>
+    <string name="tbl_WalletProducts">WalletProducts</string>
+    <string name="tbl_IRProducts">IRProducts</string>
+    <string name="tbl_reseller_info">reseller_info</string>
+    <string name="tbl_reseller_acc_info">reseller_acc_info</string>
+    <string name="tbl_transaction_menu">transaction_menu</string>
+    <string name="tbl_set_user_info">set_user_info</string>
+    <string name="tbl_set_topup_detail">set_topup_detail</string>
+    <string name="tbl_set_billpay_detail">set_billpay_detail</string>
+    <string name="tbl_set_voucher_detail">set_voucher_detail</string>
+    <string name="tbl_set_wallet_detail">set_wallet_detail</string>
+    <string name="tbl_set_ir_detail">set_ir_detail</string>
+
+    <!-- Array -->
+
+    <string-array name="array_myAccount">
+        <item>@string/lbl_acc_name</item>
+        <item>@string/lbl_category</item>
+        <item>@string/lbl_country</item>
+        <item>@string/lbl_state</item>
+        <item>@string/lbl_zipcode</item>
+        <item>@string/lbl_id_proofType</item>
+        <item>@string/lbl_id_no</item>
+        <item>@string/lbl_firstName</item>
+        <item>@string/lbl_lastName</item>
+        <item>@string/lbl_emailAdd</item>
+        <item>@string/lbl_phone</item>
+        <item>@string/lbl_sales_exe</item>
+        <item>@string/lbl_tree_mgr</item>
+        <item>@string/lbl_tree_level</item>
+        <item>@string/lbl_tree_node_level</item>
+        <item>@string/lbl_tree_node_name</item>
+        <item>@string/lbl_service</item>
+    </string-array>
+    <string-array name="array_favouriteMenu">
+        <item>@string/lbl_topup_favourite</item>
+        <item>@string/lbl_billpay_favourite</item>
+        <item>@string/lbl_voucher_favourite</item>
+    </string-array>
+    <string-array name="array_ReportMenu">
+        <item>@string/lbl_trans_history</item>
+        <item>@string/lbl_commission</item>
+        <item>@string/lbl_refund_transaction</item>
+    </string-array>
+    <string-array name="array_ProductTransHistory">
+        <item>@string/lbl_topup_transaction</item>
+        <item>@string/lbl_billpay_transaction</item>
+        <item>@string/lbl_voucher_transaction</item>
+        <item>@string/lbl_wallet_transaction</item>
+    </string-array>
+    <string-array name="array_TransactionHistory">
+        <item>@string/lbl_last_day</item>
+        <item>@string/lbl_last_week</item>
+        <item>@string/lbl_custom_search</item>
+    </string-array>
+    <string-array name="array_SettingsList">
+        <item>@string/lbl_change_login_password</item>
+        <item>@string/lbl_change_trasaction_pin</item>
+        <item>@string/lbl_update_products</item>
+    </string-array>
+    <string-array name="array_SettingsList_with_mdm">
+        <item>@string/lbl_change_login_password</item>
+        <item>@string/lbl_change_trasaction_pin</item>
+        <item>@string/lbl_update_products</item>
+        <item>@string/lbl_update_app</item>
+    </string-array>
+    <string-array name="array_SettingsList_without_mdm">
+        <item>@string/lbl_change_login_password</item>
+        <item>@string/lbl_change_trasaction_pin</item>
+        <item>@string/lbl_update_products</item>
+    </string-array>
+    <string-array name="array_SettingsList_withoutPIN">
+        <item>@string/lbl_change_login_password</item>
+        <item>@string/lbl_update_products</item>
+    </string-array>
+    <string-array name="array_commissionLables">
+        <item>@string/lbl_balance</item>
+        <item>@string/lbl_total_req</item>
+        <item>@string/lbl_success</item>
+        <item>@string/lbl_fail</item>
+        <item>@string/lbl_topup_amt</item>
+        <item>@string/lbl_total_commission</item>
+    </string-array>
+    <string-array name="array_detailedBillpayReportlabels">
+        <item>Product Name</item>
+        <item>Transaction Description</item>
+        <item>Transaction Time</item>
+        <item>RequestUniqueID</item>
+        <item>Face Amount</item>
+        <item>Surcharge</item>
+        <item>Tax</item>
+        <item>Commission</item>
+        <item>Net Amount</item>
+        <item>Transaction Status</item>
+    </string-array>
+    <string-array name="array_detailedTopReportlabels">
+        <item>Request Time</item>
+        <item>Request ID</item>
+        <item>Shop Name</item>
+        <item>Reseller</item>
+        <item>Service</item>
+        <item>Product</item>
+    </string-array>
+    <string-array name="array_detailedVoucherReportlabels">
+        <item>Product Name</item>
+        <item>Transaction Description</item>
+        <item>Transaction Time</item>
+        <item>RequestUniqueID</item>
+        <item>Pin Quantity</item>
+        <item>Face Amount</item>
+        <item>Surcharge</item>
+        <item>Tax</item>
+        <item>Commission</item>
+        <item>Net Amount</item>
+        <item>Transaction Status</item>
+    </string-array>
+    <string-array name="array_detailedWalletReportlabels">
+        <item>Product Name</item>
+        <item>Transaction Description</item>
+        <item>Transaction Time</item>
+        <item>RequestUniqueID</item>
+        <item>Face Amount</item>
+        <item>Surcharge</item>
+        <item>Tax</item>
+        <item>Commission</item>
+        <item>Net Amount</item>
+        <item>Transaction Status</item>
+    </string-array>
+    <string-array name="array_transQueryDetails">
+        <item>@string/lbl_product_name</item>
+        <item>@string/lbl_transaction_desc</item>
+        <item>@string/lbl_ref_no</item>
+        <item>@string/lbl_trans_time</item>
+        <item>@string/lbl_requnique_id</item>
+        <item>@string/lbl_face_amt</item>
+        <item>@string/lbl_surcharge</item>
+        <item>@string/lbl_tax</item>
+        <item>@string/lbl_comm</item>
+        <item>@string/lbl_net_amt</item>
+        <item>@string/lbl_trans_status</item>
+    </string-array>
+    <string-array name="array_detailedRefundReportlabels">
+        <item>@string/lbl_req_start_time</item>
+        <item>@string/lbl_req_end_time</item>
+        <item>@string/lbl_requestid</item>
+        <item>@string/lbl_shopName</item>
+        <item>@string/lbl_reseller_name</item>
+        <item>@string/lbl_service</item>
+        <item>@string/lbl_product</item>
+    </string-array>
+
+    <string name="msg_decline_status">Transaction is in Decline,please try after some time</string>
+    <string name="msg_app_uptodate">Application is already upto date</string>
+    <string name="msg_no_new_update">No new updates available</string>
+    <string name="msg_error_insufficient_storage">Insufficient storage available</string>
+    <string name="imei">imei</string>
+
+</resources>

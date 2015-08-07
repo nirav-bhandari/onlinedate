@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="Thistle4">#806D7E</color>
+    <color name="CornflowerBlue">#151B8D</color>
+    <color name="brown">#451211</color>
+    <color name="green">#00CD00</color>
+    <color name="red">#FF0000</color>
+    <color name="light_gray_bg">#d0d0d0</color>
+    <color name="light_gray_text">#303030</color>
+    <color name="separator_gray">#9F9F9F</color>
+    <color name="step1_color">#f87217</color>
+    <color name="yellow">#fbcc0d</color>
+    <color name="orange">#f37435</color>
+    <color name="light_yellow">#ffdaae</color>
+    <color name="gray">#373737</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#02739b</color>
+    <color name="dark_blue">#00516e</color>
+    <color name="header_color">#0091d0</color>
+    <color name="header_button_back_color">#0074a6</color>
+    <color name="footer_color">#0091d0</color>
+    <color name="edittext_border">#cfcfcf</color>
+    <color name="edittext_border_selected">#0074a6</color>
+    <color name="edittext_background">#f9f9f9</color>
+    <color name="special_text_color">#0091d0</color>
+    <color name="list_row_image_back">#0091d0</color>
+    <color name="button_color">#0091d0</color>
+    <color name="button_selected_color">#0074a6</color>
+    <color name="text_color">#666666</color>
+
+</resources>

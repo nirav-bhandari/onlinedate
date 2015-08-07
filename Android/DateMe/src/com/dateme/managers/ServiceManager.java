@@ -1,0 +1,139 @@
+package com.dateme.managers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+
+import android.content.Context;
+import android.util.Log;
+
+import com.dateme.asynctask.AsyncTaskForNetworkManager;
+import com.dateme.callback.ParseListener;
+import com.dateme.callback.ResponseListener;
+import com.dateme.config.AppConstants;
+import com.dateme.config.JSONConstants;
+import com.dateme.entities.RegistrationResponseEntity;
+import com.dateme.entities.UserInfo;
+import com.dateme.fragment.network.RequestType;
+
+public class ServiceManager {
+	private static final ServiceManager INSTANCE = new ServiceManager();
+
+	private ServiceManager() {
+	}
+
+	public static ServiceManager getInstance() {
+		return INSTANCE;
+	}
+
+	public void init() {
+		Log.d(AppConstants.DEBUG, "INIT ServiceManager MANAGER");
+	}
+
+	public void RegisterUser(final Context context, String url,
+			UserInfo userInfo, final ResponseListener listener) {
+
+		List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>();
+		nameValuePair.add(new BasicNameValuePair(JSONConstants.GetRegistration.EMAIL, userInfo.getEmail()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.USERNAME,
+				userInfo.getUsername()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.NAME,
+				userInfo.getName()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.PASSWORD,
+				userInfo.getEmail()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.BIRTHDAY,
+				userInfo.getBirthday()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.GENDER,
+				userInfo.getGender()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.HERE_FOR,
+				userInfo.getHere_for()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.LOOKING_FOR,userInfo.getLookingfor()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.LOCATION,userInfo.getLocation()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.INTEREST,userInfo.getInterests()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.ABOUTME,userInfo.getAboutme()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.RELATIONSHIP,userInfo.getRelationship()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.SEXUALITY,userInfo.getSexuality()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.HEIGHT,userInfo.getHeight()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.WEIGHT,userInfo.getWeight()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.BODY_TYPE,userInfo.getBody_type()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.EYE_COLOR,userInfo.getEyecolor()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.HAIR_COLOR,userInfo.getHair_color()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.LIVING,userInfo.getLiving()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.CHILDREN,userInfo.getChildren()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.SMOKING,userInfo.getSmoking()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.DRINKING,userInfo.getDrinking()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.EDUCATION,userInfo.getEducation()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.LANGUAGE,userInfo.getLanguage()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.JOB,userInfo.getJob()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.COMPANY,userInfo.getCompany()));
+		nameValuePair.add(new BasicNameValuePair(
+				JSONConstants.GetRegistration.INCOME,userInfo.getIncome()));
+	 
+
+		ParseListener parseListener = new ParseListener() {
+
+			@Override
+			public Object onParse(String jsonString) {
+				RegistrationResponseEntity registrationResponseEntity = null;
+				try {
+					registrationResponseEntity = (RegistrationResponseEntity) ParseManager
+							.parse(RequestType.GET_REGISTRATION, jsonString);
+				} catch (JSONException e) {
+					registrationResponseEntity = new RegistrationResponseEntity();
+					Log.e(AppConstants.EXCEPTION, e.toString(), e);
+
+				} catch (Exception e) {
+					registrationResponseEntity = new RegistrationResponseEntity();
+					Log.e(AppConstants.EXCEPTION, e.toString(), e);
+				}
+				return registrationResponseEntity;
+			}
+		};
+		new AsyncTaskForNetworkManager(context, nameValuePair, url,
+				AppConstants.TERMINALKEYFLAG, parseListener) {
+
+			@Override
+			protected void onPostExecute(Object object) {
+
+				super.onPostExecute(object);
+
+				try {
+					RegistrationResponseEntity terminalNumberResponseEntity = (RegistrationResponseEntity) object;
+					listener.onResponse(terminalNumberResponseEntity);
+				} catch (Exception e) {
+					Log.e(AppConstants.EXCEPTION, e.toString(), e);
+				}
+
+			}
+		}.execute();
+
+	}
+}
