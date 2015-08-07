@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white"
+    android:layout_gravity="center"
+    >
+
+<Button
+    android:id="@+id/btnOtherOption"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/login_button"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/login_button"
+    android:layout_margin="40dp"
+    android:gravity="center"
+    android:text="Other Option" />
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOtherOption"
+        android:layout_centerHorizontal="true"
+        facebook:confirm_logout="false"
+        facebook:fetch_user_info="true" />
+    
+</RelativeLayout>
+    
+</LinearLayout>
